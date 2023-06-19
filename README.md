@@ -30,8 +30,8 @@ A estrutura básica do repositório é a seguinte:
 - A pasta `cypress` contém os arquivos de configuração e os testes automatizados.
 - A pasta `fixtures` contém dados de teste em formato JSON.
 - O diretório `e2e` contém os testes automatizados separados por funcionalidade.
-- O diretório `cypress.config` contém os plugins utilizados pelo Cypress.
 - A pasta `support` contém arquivos de suporte aos testes, como comandos personalizados.
+- O arquivo `cypress.config` contém os plugins utilizados pelo Cypress.
 - O arquivo `.gitignore` especifica quais arquivos devem ser ignorados pelo Git.
 - O arquivo `package.json` contém as informações e dependências do projeto.
 - O arquivo `README.md` é este documento.
