@@ -1,64 +1,57 @@
 # Projeto de Testes Automatizados API com Cypress
 
-Este documento descreve o repositório e o projeto de testes automatizados para API usando o framework Cypress, com foco na API pública chamada 'ServeRest'.
-
-## Sobre o Projeto
-
-O projeto tem como objetivo realizar testes automatizados na API ServeRest. O framework utilizado é o Cypress, conhecido por sua facilidade de uso e poderosa biblioteca de testes.
+Este repositório contém um projeto de testes automatizados para a API pública ServeRest, utilizando o framework Cypress.
 
 ## Funcionalidades
 
-O projeto possui os seguintes recursos:
+O projeto possui as seguintes funcionalidades:
 
-1. **Login**: Testes para realizar login na API ServeRest, verificando se o usuário é autenticado com sucesso.
-2. **Usuários**: Testes para cadastrar, pesquisar, atualizar e excluir usuários na API ServeRest.
-3. **Produtos**: Testes para cadastrar, pesquisar, atualizar e excluir produtos na API ServeRest.
-4. **Carrinho**: Testes para manipular o carrinho de compras na API ServeRest, adicionando e removendo produtos.
+- Login
+- Usuários
+- Produtos
+- Carrinho
 
 ## Estrutura do Repositório
 
-O repositório segue uma estrutura básica:
+A estrutura básica do repositório é a seguinte:
 
 ```
 ├── cypress
 │   ├── fixtures
-│   ├── integration
-│   ├── plugins
+│   ├── e2e
 │   ├── support
 │   ├── ...
-├── node_modules
+├── cypress.config
 ├── .gitignore
 ├── package.json
 └── README.md
 ```
 
-- O diretório `cypress` contém os arquivos de configuração e os testes automatizados.
-- O diretório `fixtures` contém arquivos JSON com dados de teste.
+- A pasta `cypress` contém os arquivos de configuração e os testes automatizados.
+- A pasta `fixtures` contém dados de teste em formato JSON.
 - O diretório `e2e` contém os testes automatizados separados por funcionalidade.
 - O diretório `cypress.config` contém os plugins utilizados pelo Cypress.
-- O diretório `support` contém os arquivos de suporte aos testes, como comandos personalizados.
-- O diretório `node_modules` contém as dependências do projeto.
-- O arquivo `.gitignore` especifica quais arquivos devem ser ignorados pelo controle de versão Git.
+- A pasta `support` contém arquivos de suporte aos testes, como comandos personalizados.
+- O arquivo `.gitignore` especifica quais arquivos devem ser ignorados pelo Git.
 - O arquivo `package.json` contém as informações e dependências do projeto.
 - O arquivo `README.md` é este documento.
 
-## Requisitos
+## Requisitos e Execução
 
-Para rodar os testes automatizados deste projeto, você precisa ter o [Cypress](https://www.cypress.io/) instalado em seu ambiente de desenvolvimento.
+Certifique-se de ter o [Cypress](https://www.cypress.io/) instalado.
 
-## Como Executar os Testes
+Para rodar os testes:
 
-1. Clone este repositório em seu ambiente local.
-2. Abra o terminal na pasta raiz do projeto.
-3. Execute o comando `npm install` para instalar as dependências.
-4. Execute o comando `npx cypress open` para abrir o Cypress Test Runner.
-5. No Cypress Test Runner, clique no nome do arquivo de teste que deseja executar.
-6. Aproveite os testes automatizados e os resultados exibidos no painel de execução.
+1. Clone o repositório.
+2. Abra o terminal na raiz do projeto.
+3. Execute `npm install` para instalar as dependências.
+4. Execute `npx cypress open` para abrir o Cypress Test Runner.
+5. No Test Runner, selecione o arquivo de teste desejado.
 
 ## Contribuições
 
-Contribuições são sempre bem-vindas! Caso deseje melhorar este projeto ou adicionar novos testes, sinta-se à vontade para abrir uma pull request.
+Contribuições são bem-vindas! Sinta-se à vontade para sugerir melhorias ou adicionar novos testes através de pull requests.
 
 ## Licença
 
-Este projeto é distribuído sob a licença MIT.
+Este projeto está licenciado sob a licença MIT.
